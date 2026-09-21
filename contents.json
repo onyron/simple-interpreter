@@ -1,0 +1,6 @@
+{
+  "assn": {
+    "dst": "a",
+    "src": { "binop": "+", "left": { "var": "a" }, "right": { "const": 2 } }
+  }
+}
