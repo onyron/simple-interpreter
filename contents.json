@@ -1,6 +1,17 @@
-{
-  "assn": {
-    "dst": "a",
-    "src": { "binop": "+", "left": { "var": "a" }, "right": { "const": 2 } }
-  }
-}
+[
+  { "CONST": 2 },
+  { "CONST": 5 },
+  { "BINOP": "+" },
+  { "CONST": 4 },
+  { "BINOP": "+" },
+  { "ST": "a" },
+  { "LD": "a" },
+  { "CONST": 11 },
+  { "BINOP": "==" },
+  { "JZ": "L_else_2" },
+  { "LD": "a" },
+  "WRITE",
+  { "JMP": "L_end_0" },
+  { "LABEL": "L_else_2" },
+  { "LABEL": "L_end_0" }
+]
