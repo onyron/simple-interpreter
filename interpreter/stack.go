@@ -1,4 +1,4 @@
-package main
+package interpreter
 
 type Stack[T any] struct {
 	items []T
