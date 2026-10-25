@@ -1,4 +1,4 @@
-package stackmachine
+package sm
 
 func (in *Interpreter) doBinOp(op string) {
 	r := in.stack.Pop()

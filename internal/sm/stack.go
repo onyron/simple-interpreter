@@ -1,4 +1,4 @@
-package stackmachine
+package sm
 
 type Stack[T any] struct {
 	items []T

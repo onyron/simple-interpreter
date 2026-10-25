@@ -1,4 +1,4 @@
-package stackmachine
+package sm
 
 import "fmt"
 

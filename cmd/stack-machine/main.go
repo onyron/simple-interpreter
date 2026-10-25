@@ -4,7 +4,7 @@ import (
 	"log"
 	"os"
 
-	"interpreter/internal/stackmachine"
+	"interpreter/internal/sm"
 )
 
 func main() {
@@ -13,11 +13,11 @@ func main() {
 		filePath = os.Args[1]
 	}
 
-	instructions, err := stackmachine.LoadProgram(filePath)
+	instructions, err := sm.LoadProgram(filePath)
 	if err != nil {
 		log.Fatalf("failed to load program: %v", err)
 	}
 
-	in := stackmachine.New(instructions)
+	in := sm.New(instructions)
 	in.Run()
 }
