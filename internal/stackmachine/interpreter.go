@@ -1,4 +1,4 @@
-package interpreter
+package stackmachine
 
 type Interpreter struct {
 	ip           int
